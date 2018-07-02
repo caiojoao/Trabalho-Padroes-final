@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_red_dark">
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        app:srcCompat="@drawable/adduser" />
+
+    <EditText
+        android:id="@+id/edt_Nome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="0dp"
+        android:ems="10"
+        android:fontFamily="serif"
+        android:hint="Nome"
+        android:inputType="textPersonName"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textColorLink="@android:color/background_light"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edt_addSobrenome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt_Nome"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:fontFamily="serif"
+        android:hint="Sobrenome"
+        android:inputType="textPersonName"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textColorLink="@android:color/background_light"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edt_addEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt_addSobrenome"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:fontFamily="serif"
+        android:hint="E-mail"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textColorLink="@android:color/background_light"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edt_Senha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt_addEmail"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:fontFamily="serif"
+        android:hint="Senha"
+        android:inputType="textPersonName"
+        android:textColor="@color/common_google_signin_btn_text_dark_pressed"
+        android:textColorLink="@android:color/background_light"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_salvarUsuario"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btn_Cancel"
+        android:layout_alignBottom="@+id/btn_Cancel"
+        android:layout_alignEnd="@+id/edt_Senha"
+        android:fontFamily="sans-serif-condensed"
+        android:text="SALVAR"
+        android:textAllCaps="false"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textStyle="bold"
+        android:typeface="serif" />
+
+    <Button
+        android:id="@+id/btn_Cancel"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/edt_Senha"
+        android:layout_marginBottom="22dp"
+        android:layout_marginStart="11dp"
+        android:fontFamily="sans-serif-condensed"
+        android:onClick="abrirLogin"
+        android:text="CANCEL"
+        android:textAllCaps="false"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textStyle="bold"
+        android:typeface="serif" />
+</RelativeLayout>

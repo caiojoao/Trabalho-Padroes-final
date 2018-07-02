@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_adicionar_pedido"
+            android:icon="@drawable/animation"
+            android:title="Adicionar Pedido" />
+        <item
+            android:id="@+id/nav_editar_usuario"
+            android:icon="@drawable/account_plus"
+            android:title="Editar Usuário" />
+        <item
+            android:id="@+id/nav_configuracoes"
+            android:icon="@drawable/settings"
+            android:title="Editar App" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_info"
+                android:icon="@drawable/alert_circle"
+                android:title="Informação" />
+            <item
+                android:id="@+id/nav_sair"
+                android:icon="@drawable/arrow_right_bold_box"
+                android:title="Sair" />
+        </menu>
+    </item>
+
+</menu>

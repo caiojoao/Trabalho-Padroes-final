@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.programer.caio.pgpproject.AddPedidoActivity">
+
+    <EditText
+        android:id="@+id/field_assunto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:hint="Assunto"
+        android:maxLines="1"
+        android:textColorLink="@android:color/background_dark" />
+
+    <EditText
+        android:id="@+id/field_pedido"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/field_assunto"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="5dp"
+        android:hint="Escreva seu pedido..."
+        android:inputType="textMultiLine"
+        android:maxLines="10"
+        android:scrollHorizontally="false"
+        android:textColorLink="@android:color/background_dark" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_submit_pedido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_navigation_check_24"
+        app:backgroundTint="@android:color/holo_red_dark" />
+
+</RelativeLayout>
